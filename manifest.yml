@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: discoverymyrate
+  host: discoverymyrate
+  disk_quota: 1024M
+  services:
+  - discoverymyrate-cloudantNoSQLDB
+  - discoverymyrate-iotf-service
+  - mysql-dev-rick
